@@ -1,0 +1,126 @@
+*{
+    margin: 100;
+    padding: 100;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: oblique;
+    background-color: #d9db53;
+    
+}
+h1 {
+    position:relative ;
+    color: transparent;
+    font-weight: 700;
+    font-size: 8em;
+    line-height: 0.9em;
+    letter-spacing: 2px;
+    text-align: center;
+    transform: rotate(-28);
+    border: #1c1f2b;
+    border-radius: 1px;
+    text-transform: uppercase;
+    -webkit-text-stroke: 3px #556B2F;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider-container {
+    position: relative ;
+    width: 80%;
+    max-width: 500px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.534);
+}
+
+.slider {
+    display: flex;
+    width: 500px;
+    height: 700px;
+    transition: transform 05s ease-in-out;
+
+}
+
+.slide {
+    border: 1px solid #556B2F;
+    width: 100%;
+    height: 100%;
+    /* min-width: 100%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #556B2F;
+}
+
+.active {
+    display: flex;
+}
+
+.non-active {
+    display: none;
+}
+
+.slide img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.slide video {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.card {
+    margin: 0 auto;
+    padding: 2em;
+    width: 400px;
+    background: #1c1f2b;
+    /* text align: center;
+    border-radius: 10px; */
+
+}
+
+/* Navigation Buttons */
+/* button {
+    position: absolute;
+    top: 80%;
+    transform: translateY(-50%);
+    background: rgb(255, 255, 255);
+    border: thin;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 50px;
+    color: black;
+    border-radius: 50%;
+}
+
+#prev { left: 5px; }
+#next { right: 5px; } */
+
+.slider-controls {
+    /* border: 1px solid hotpink; */
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 300px;
+    width: 500px;
+    background: transparent;
+    top: 80%;
+}
+
+.slider-controls button {
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+}
+
+button:hover {
+    background-color: rgb(231, 229, 230);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
