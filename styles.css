@@ -13,6 +13,38 @@
   font-family: fancyhandwritting2;
   src: url("Fonts/mestika/Mestika.ttf");
 }
+
+.navbar {
+  width: 100%;
+  background-color: #556b2f;
+  padding: 1em 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 3em;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  font-size: 1.5em;
+  font-family: fancyhandwritting2;
+  color: #556b2f;
+  transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #cbaf51;
+}
+
 p {
   font-family: fancyhandwritting;
   font-size: 4em;
@@ -42,6 +74,22 @@ h1 {
     transform: rotate(-28); */
   /* text-transform: uppercase; */
   /* -webkit-text-stroke: 0.1px #556B2F; */
+}
+h2 {
+  font-family: fancyhandwritting2;
+  background-image: linear-gradient(
+    to right,
+    #556b2f 0,
+    #cbaf51 22%,
+    #77853b 45%,
+    #556b2f 50%,
+    #77853b 55%,
+    #cbaf51 78%,
+    #556b2f 100%
+  );
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 4em;
 }
 body {
   display: flex;
