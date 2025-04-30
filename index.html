@@ -1,93 +1,103 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="styles.css" />
-    <script
-      src="https://kit.fontawesome.com/2886f4f129.js"
-      crossorigin="anonymous"
-    ></script>
-    <title>Edgar and Ara's Wedding</title>
-  </head>
-  <body>
-    <header class="navbar">
-      <nav>
-        <ul class="nav-links">
-          <li><a href="gallery.html">Gallery</a></li>
-          <li><a href="location.html">Location</a></li>
-          <li><a href="accommodation.html">Accomodation</a></li>
-          <li><a href="dresscode.html">Dress code</a></li>
-          <li><a href="donations.html">Donations</a></li>
-        </ul>
-      </nav>
-    </header>
-    <h1>Edgar and Ara's Wedding</h1>
-    <div class="slider-container">
-      <div class="slider">
-        <div class="slide active">
-          <img src="images/WeRengaged.jpg" alt="engagement picture" />
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="styles.css" />
+        <script src="https://kit.fontawesome.com/2886f4f129.js" crossorigin="anonymous"></script>
+        <title>Edgar and Ara's Wedding</title>
+    </head>
+    <body>
+        <div class="background"></div>
+        <header class="navbar">
+            <label class="hamburguerbuttom" for="menucheckbox">
+                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24">
+                    <path fill="currentColor" d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z" />
+                </svg>
+            </label>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="./Gallery/gallery.html">Gallery</a></li>
+                    <li><a href="./Location/location.html">Location</a></li>
+                    <li><a href="./Accomodations/accomodations.html">Accomodation</a></li>
+                    <li><a href="./Dress_code/dresscode.html">Dress code</a></li>
+                    <li><a href="./GiftsAndContributions/GiftsAndContributions.html">Gifts & Contributions</a></li>
+                </ul>
+            </nav>
+        </header>
+        <input type="checkbox" id="menucheckbox" />
+        <nav class="mobile-nav">
+            <ul class="nav-links">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./Gallery/gallery.html">Gallery</a></li>
+                <li><a href="./Location/location.html">Location</a></li>
+                <li><a href="./Accomodations/accomodations.html">Accomodation</a></li>
+                <li><a href="./Dress_code/dresscode.html">Dress code</a></li>
+                <li><a href="./GiftsAndContributions/GiftsAndContributions.html">Gifts & Contributions</a></li>
+            </ul>
+        </nav>
+        <h1>Edgar and Ara's Wedding</h1>
+        <div class="slider-container">
+            <div class="slider">
+                <div class="slide active">
+                    <img src="images/WeRengaged.jpg" alt="engagement picture" />
+                </div>
+                <div class="slide non-active">
+                    <video src="videos/araviewproposal.mp4" controls></video>
+                </div>
+                <div class="slide non-active">
+                    <video src="videos/Georgeviewproposal.mp4" controls></video>
+                </div>
+                <div class="slide non-active">
+                    <video src="videos/applauseproposal.mp4" controls></video>
+                </div>
+                <div class="slide non-active">
+                    <img src="images/ring.jpg" alt="ring picture" />
+                </div>
+            </div>
+            <div class="slider-controls">
+                <button id="prev">
+                    <i class="fa-solid fa-caret-left"></i>
+                </button>
+                <button id="next">
+                    <i class="fa-solid fa-caret-right"></i>
+                </button>
+            </div>
         </div>
-        <div class="slide non-active">
-          <video src="videos/araviewproposal.mp4" controls></video>
+        <h2>January 16th, 17th & 18th 26's</h2>
+        <div id="greeting-text">
+            <p class="center">Welcome to Our Love Story!</p>
+            <p class="center">Hey there, lovely humans!</p>
+
+            <p>
+                We’re beyond excited to invite you to celebrate one of the most special days of our lives. On December 16th~18th, we’re
+                tying the knot, and we’d be absolutely thrilled to have you there to share in the joy, laughter, and maybe even a few happy
+                tears.
+            </p>
+
+            <p>
+                This day is all about love, connection, and good vibes. Think cozy moments, heartfelt conversations, and a whole lot of
+                dancing (or swaying, if that’s more your style). Whether you’re a longtime friend, a cherished family member, or someone
+                we’ve recently connected with, your presence means the world to us.
+            </p>
+
+            <p>
+                So, grab your favorite outfit, bring your best smiles, and get ready to party with us as we say “I do” and kick off this new
+                chapter together. We can’t wait to see you there!
+            </p>
+
+            <p class="center">With all our love,</p>
+            <p class="center">Edgar & Aracelis</p>
+
+            <p>
+                P.S. Don’t forget to check out the rest of the site for all the details—schedule, location, accommodations, and more. Let us
+                know if you need anything!
+            </p>
         </div>
-        <div class="slide non-active">
-          <video src="videos/Georgeviewproposal.mp4" controls></video>
-        </div>
-        <div class="slide non-active">
-          <video src="videos/applauseproposal.mp4" controls></video>
-        </div>
-        <div class="slide non-active">
-          <img src="images/ring.jpg" alt="ring picture" />
-        </div>
-      </div>
-      <div class="slider-controls">
-        <button id="prev">
-          <i class="fa-solid fa-caret-left"></i>
-        </button>
-        <button id="next">
-          <i class="fa-solid fa-caret-right"></i>
-        </button>
-      </div>
-    </div>
-    <h2>January 16th, 17th & 18th 26's</h2>
-    <div id="greeting-text">
-      <p class="center">Welcome to Our Love Story!</p>
-      <p class="center">Hey there, lovely humans!</p>
-
-      <p>
-        We’re beyond excited to invite you to celebrate one of the most special
-        days of our lives. On [Wedding Date], we’re tying the knot, and we’d be
-        absolutely thrilled to have you there to share in the joy, laughter, and
-        maybe even a few happy tears.
-      </p>
-
-      <p>
-        This day is all about love, connection, and good vibes. Think cozy
-        moments, heartfelt conversations, and a whole lot of dancing (or
-        swaying, if that’s more your style). Whether you’re a longtime friend, a
-        cherished family member, or someone we’ve recently connected with, your
-        presence means the world to us.
-      </p>
-
-      <p>
-        So, grab your favorite outfit, bring your best smiles, and get ready to
-        party with us as we say “I do” and kick off this new chapter together.
-        We can’t wait to see you there!
-      </p>
-
-      <p class="center">With all our love,</p>
-      <p class="center">Edgar & Aracelis</p>
-
-      <p>
-        P.S. Don’t forget to check out the rest of the site for all the
-        details—schedule, location, accommodations, and more. Let us know if you
-        need anything!
-      </p>
-    </div>
-    <script src="script.js"></script>
-    <script>
-      // prev.innerText = "<"
-      // next.innerText = ">"
-    </script>
-  </body>
+        <script src="script.js"></script>
+        <script>
+            // prev.innerText = "<"
+            // next.innerText = ">"
+        </script>
+    </body>
 </html>
