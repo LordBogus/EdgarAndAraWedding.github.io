@@ -4,6 +4,8 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="../styles.css" />
+        <link rel="stylesheet" href="./styles.css" />
+        <script defer src="./script.js"></script>
         <title>Document</title>
     </head>
     <body>
@@ -37,5 +39,41 @@
             </ul>
         </nav>
         <h1>Location</h1>
+        <div class="address-container">
+            <p class="address">Lago de teques LT 36 4ª sección, <br />62915 Tequesquitengo, Mor.</p>
+            <button class="copy-button" onclick="copyText()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 16 16">
+                    <path
+                        fill="currentColor"
+                        d="M13.49 3L10.74.37A1.22 1.22 0 0 0 9.86 0h-4a1.25 1.25 0 0 0-1.22 1.25v11a1.25 1.25 0 0 0 1.25 1.25h6.72a1.25 1.25 0 0 0 1.25-1.25V3.88a1.22 1.22 0 0 0-.37-.88m-.88 9.25H5.89v-11h2.72v2.63a1.25 1.25 0 0 0 1.25 1.25h2.75zm0-8.37H9.86V1.25z"
+                    />
+                    <path
+                        fill="currentColor"
+                        d="M10.11 14.75H3.39v-11H4V2.5h-.61a1.25 1.25 0 0 0-1.25 1.25v11A1.25 1.25 0 0 0 3.39 16h6.72a1.25 1.25 0 0 0 1.25-1.25v-.63h-1.25z"
+                    />
+                </svg>
+            </button>
+        </div>
+        <iframe
+            class="big-map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23508.82283029703!2d-99.29202293314206!3d18.619204099379683!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cdd362b84e3e91%3A0xf16fbfd753a2e978!2sTRES%20CIELOS!5e0!3m2!1sen!2smx!4v1746317412946!5m2!1sen!2smx"
+            width="800"
+            height="600"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+        <iframe
+            class="small-map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23508.82283029703!2d-99.29202293314206!3d18.619204099379683!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cdd362b84e3e91%3A0xf16fbfd753a2e978!2sTRES%20CIELOS!5e0!3m2!1sen!2smx!4v1746319202677!5m2!1sen!2smx"
+            width="400"
+            height="300"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+        <p style="padding-bottom: 20px"></p>
     </body>
 </html>

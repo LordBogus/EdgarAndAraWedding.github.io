@@ -1,80 +1,40 @@
-@font-face {
-    font-family: fancyhandwritting;
-    src: url("Fonts/wasted-vindey/Wasted-Vindey.ttf");
-}
-@font-face {
-    font-family: fancyhandwritting2;
-    src: url("Fonts/mestika/Mestika.ttf");
-}
-
-.navbar {
-    background-color: #c7d4af;
-    padding: 1em 0;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 999;
-}
-
-.nav-links {
-    list-style: none;
+.address-container {
     display: flex;
     justify-content: center;
-    gap: 3em;
-    margin: 0;
-    padding: 0;
-}
-
-.nav-links li a {
-    text-decoration: none;
-    font-size: 1.5em;
-    font-family: fancyhandwritting2;
-    color: #556b2f;
-    transition: color 0.3s;
-}
-
-.nav-links li a:hover {
-    color: #cbaf51;
-}
-
-p {
-    font-family: fancyhandwritting;
-    font-size: 4em;
-}
-h1 {
-    font-family: fancyhandwritting2;
-    background-image: linear-gradient(to right, #556b2f 0, #cbaf51 22%, #77853b 45%, #556b2f 50%, #77853b 55%, #cbaf51 78%, #556b2f 100%);
-    -webkit-background-clip: text;
-    color: transparent;
-    font-size: 8em;
-    text-align: center;
-}
-h2 {
-    font-family: fancyhandwritting2;
-    background-image: linear-gradient(to right, #556b2f 0, #cbaf51 22%, #77853b 45%, #556b2f 50%, #77853b 55%, #cbaf51 78%, #556b2f 100%);
-    -webkit-background-clip: text;
-    color: transparent;
-    font-size: 4em;
-}
-body {
-    display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    position: relative;
-    margin: 0;
+    gap: 8px;
 }
-.background {
-    opacity: 0.2;
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: auto;
-    z-index: -1;
-    background-image: url("./images/AppaTophBG.jpg");
-    height: 100vh;
-    background-repeat: repeat-y;
-    background-size: cover;
+button {
+    font-size: 2em;
+    border-radius: 4px;
+    display: flex;
+    padding: 10px;
+}
+.small-map {
+    display: none;
+}
+p {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    width: fit-content;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 450px) {
+    .big-map {
+        display: none;
+    }
+    .small-map {
+        display: block;
+    }
+    p {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+    .address-container {
+        flex-direction: column;
+        margin: 10px;
+        margin-bottom: 20px;
+    }
 }
