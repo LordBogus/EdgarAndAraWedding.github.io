@@ -1,8 +1,10 @@
 // console.log("test");
-const copyButton = document.querySelector(".copy-button");
+// const copyButton = document.querySelector(".copy-button");
 // console.log(copyButton);
 const address = document.querySelector(".address");
 
 function copyText() {
-    navigator.clipboard.writeText(address.textContent);
+    navigator.clipboard.writeText(address.textContent).then(() => {
+        alert("Text copied to clipboard");
+    });
 }
