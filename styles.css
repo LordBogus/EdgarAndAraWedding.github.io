@@ -97,8 +97,8 @@ body {
     z-index: -1;
     background-image: url("./images/AppaTophBG.jpg");
     height: 100vh;
-    background-repeat: repeat-y;
-    background-size: cover;
+    background-position: center;
+    background-size: contain;
 }
 
 .slider-container {
