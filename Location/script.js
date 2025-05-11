@@ -8,3 +8,12 @@ function copyText() {
         alert("Text copied to clipboard");
     });
 }
+
+function changeToSpanish() {
+    console.log("changeToSpanish");
+    locationUbicacion.textContent = "Ubicación";
+}
+function changeToEnglish() {
+    console.log("changeToEnglish");
+    locationUbicacion.textContent = "Location";
+}

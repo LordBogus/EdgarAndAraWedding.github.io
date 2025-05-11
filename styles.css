@@ -71,6 +71,7 @@ h1 {
     color: transparent;
     font-size: 8em;
     text-align: center;
+    padding: 3px;
 }
 h2 {
     font-family: fancyhandwritting2;
@@ -179,7 +180,9 @@ button:hover {
     width: fit-content;
     padding: 5px;
 }
-
+#language {
+    display: none;
+}
 @media screen and (max-width: 450px) {
     h1 {
         font-size: 3em;
@@ -205,6 +208,9 @@ button:hover {
     }
     .navbar {
         padding: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
     .background {
         background-size: 150%;
@@ -215,5 +221,10 @@ button:hover {
         flex-direction: column;
         gap: 0;
         margin-top: 43px;
+    }
+    #language {
+        display: block;
+        margin-left: 10px;
+        padding: 10px;
     }
 }

@@ -11,6 +11,7 @@
     <body>
         <div class="background"></div>
         <header class="navbar">
+            <button id="language">EN</button>
             <label class="hamburguerbuttom" for="menucheckbox">
                 <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24">
                     <path fill="currentColor" d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z" />
@@ -38,7 +39,7 @@
                 <li><a href="../GiftsAndContributions/GiftsAndContributions.html">Gifts & Contributions</a></li>
             </ul>
         </nav>
-        <h1>Location</h1>
+        <h1 id="locationUbicacion">Location</h1>
         <div class="address-container">
             <p class="address">Lago de teques LT 36 4ª sección, <br />62915 Tequesquitengo, Mor.</p>
             <button class="copy-button" onclick="copyText()">
@@ -75,5 +76,7 @@
             referrerpolicy="no-referrer-when-downgrade"
         ></iframe>
         <p style="padding-bottom: 20px"></p>
+        <script src="./script.js"></script>
+        <script src="../languageSelector.js"></script>
     </body>
 </html>

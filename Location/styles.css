@@ -4,7 +4,7 @@
     align-items: center;
     gap: 8px;
 }
-button {
+.copy-button {
     font-size: 2em;
     border-radius: 4px;
     display: flex;
