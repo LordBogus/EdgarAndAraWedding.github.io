@@ -173,6 +173,7 @@ button:hover {
 #greeting-text {
     max-width: 80%;
     margin: auto;
+    text-align: justify;
 }
 .hamburguerbuttom {
     display: none;

@@ -9,4 +9,7 @@
 }
 p {
     margin: 25px;
+    max-width: 80%;
+    margin: auto;
+    text-align: justify;
 }

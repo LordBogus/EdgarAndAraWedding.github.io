@@ -12,8 +12,10 @@ function copyText() {
 function changeToSpanish() {
     console.log("changeToSpanish");
     locationUbicacion.textContent = "Ubicación";
+    menuLanguage();
 }
 function changeToEnglish() {
     console.log("changeToEnglish");
     locationUbicacion.textContent = "Location";
+    menuLanguage();
 }
