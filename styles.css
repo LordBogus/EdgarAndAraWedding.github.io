@@ -186,6 +186,8 @@ button:hover {
     padding: 5px;
 }
 #language {
+    padding: 4px;
+    margin-right: 20px;
 }
 @media screen and (max-width: 450px) {
     h1 {
