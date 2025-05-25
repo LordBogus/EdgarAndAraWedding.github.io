@@ -37,6 +37,10 @@ label svg {
     left: 0;
     right: 0;
     z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
 }
 
 .nav-links {
@@ -182,7 +186,6 @@ button:hover {
     padding: 5px;
 }
 #language {
-    display: none;
 }
 @media screen and (max-width: 450px) {
     h1 {

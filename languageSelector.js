@@ -13,26 +13,42 @@ language.addEventListener("click", function () {
         localStorage.setItem("language", "EN");
         changeToEnglish();
     }
+    menuLanguage();
 });
 
 function menuLanguage() {
     console.log(localStorage.getItem("language"));
     const navLinks = document.querySelectorAll(".nav-links");
-    const englishMenu = ["Home", "Gallery", "Location", "Accommodation", "Dress Code", "Gifts & Contributions"];
-    const spanishMenu = ["Inicio", "Galeria", "Ubicación", "Instalaciones", "Código de Vestimenta", "Regalos & Contribuciones"];
     const desktopMenuList = navLinks[0];
     const mobileMenuList = navLinks[1];
-    for (i = 0; i < desktopMenuList.children.length; i++) {
-        if (localStorage.getItem("language") == "ES") {
-            desktopMenuList.children[i].innerText = spanishMenu[i];
-        }
-    }
-    for (i = 0; i < mobileMenuList.children.length; i++) {
+
+    const englishMenuItems = ["Home", "Gallery", "Location", "Accommodation", "Dress Code", "Schedule", "Gifts & Contributions"];
+    const spanishMenuItems = [
+        "Inicio",
+        "Galeria",
+        "Ubicación",
+        "Instalaciones",
+        "Código de Vestimenta",
+        "Itinerario",
+        "Regalos & Contribuciones",
+    ];
+
+    // for (i = 0; i < desktopMenuList.children.length; i++) {
+    //     if (localStorage.getItem("language") == "ES") {
+    //         console.log(desktopMenuList);
+    //         desktopMenuList.children[i].textContent = spanishMenuItems[i];
+    //     }
+    // }
+    for (let i = 0; i < desktopMenuList.children.length; i++) {
         if (localStorage.getItem("language") == "EN") {
-            desktopMenuList.children[i].innerText = englishMenu[i];
+            desktopMenuList.children[i].firstElementChild.textContent = englishMenuItems[i];
+            mobileMenuList.children[i].firstElementChild.textContent = englishMenuItems[i];
+        } else {
+            desktopMenuList.children[i].firstElementChild.textContent = spanishMenuItems[i];
+            mobileMenuList.children[i].firstElementChild.textContent = spanishMenuItems[i];
         }
     }
     console.log(navLinks);
 }
 
-// menuLanguage();
+menuLanguage();
