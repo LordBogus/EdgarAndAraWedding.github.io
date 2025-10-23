@@ -1,6 +1,10 @@
-function changeToEnglish() {
-    scheduleItinerario.textContent = "Schedule";
-}
 function changeToSpanish() {
-    scheduleItinerario.textContent = "";
+    console.log("changeToSpanish");
+    scheduleItinerario.textContent = "Itinerario";
+    menuLanguage();
+}
+function changeToEnglish() {
+    console.log("changeToEnglish");
+    scheduleItinerario.textContent = "Schedule";
+    menuLanguage();
 }

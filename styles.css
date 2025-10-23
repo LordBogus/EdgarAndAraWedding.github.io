@@ -76,6 +76,7 @@ h1 {
     font-size: 8em;
     text-align: center;
     padding: 3px;
+    -webkit-text-stroke: 0.005px rgb(0, 0, 0);
 }
 h2 {
     font-family: fancyhandwritting2;
